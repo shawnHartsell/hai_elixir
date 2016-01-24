@@ -1,0 +1,84 @@
+{
+    "grades": [
+        {
+            "id": 1,
+            "name" : "John Jones",
+            "exam1": 100,
+            "exam2": 98,
+            "exam3": 93,
+            "finalExam": 94
+        },
+        {
+            "id": 2,
+            "name" : "Betty Johnson",
+            "exam1": 95,
+            "exam2": 99,
+            "exam3": 92,
+            "finalExam": 89
+        },
+        {
+            "id": 3,
+            "name" : "Bob Hoffman",
+            "exam1": 88,
+            "exam2": 94,
+            "exam3": 76,
+            "finalExam": 89
+        },
+        {
+            "id": 4,
+            "name" : "Carla Bates",
+            "exam1": 76,
+            "exam2": 89,
+            "exam3": 90,
+            "finalExam": 84
+        },
+        {
+            "id": 5,
+            "name" : "Mark Hatfield",
+            "exam1": 76,
+            "exam2": 86,
+            "exam3": 90,
+            "finalExam": 87
+        },
+        {
+            "id": 6,
+            "name" : "Jessica Matthews",
+            "exam1": 99,
+            "exam2": 97,
+            "exam3": 100,
+            "finalExam": 93
+        },
+        {
+            "id": 7,
+            "name" : "Shawn Law",
+            "exam1": 87,
+            "exam2": 91,
+            "exam3": 94,
+            "finalExam": 86
+        },
+        {
+            "id": 8,
+            "name" : "Sonya Harding",
+            "exam1": 74,
+            "exam2": 83,
+            "exam3": 89,
+            "finalExam": 89
+        },
+        {
+            "id": 9,
+            "name" : "Tom Mantooth",
+            "exam1": 86,
+            "exam2": 87,
+            "exam3": 82,
+            "finalExam": 76
+        },
+        {
+            "id": 10,
+            "name" : "Cathy Betts",
+            "exam1": 85,
+            "exam2": 94,
+            "exam3": 90,
+            "finalExam": 90
+        }
+    ]
+}
