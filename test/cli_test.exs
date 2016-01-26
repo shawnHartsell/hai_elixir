@@ -1,7 +1,5 @@
 defmodule CliTest do
     use ExUnit.Case
-    doctest HaiElixir
-
     import HaiElixir.Cli, only: [parse_args: 1]
 
     test "can parse help" do

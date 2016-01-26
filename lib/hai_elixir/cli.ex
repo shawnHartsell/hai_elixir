@@ -31,6 +31,6 @@ defmodule HaiElixir.Cli do
      end
 
      def process(studentId) do
-
-     end 
+ 
+     end
 end
