@@ -5,6 +5,6 @@ defmodule StudentGradesTest do
     test "can get all grades" do
         data = getAll()
         assert data
-        assert Map.has_key?(data,"grades")
+        assert Enum.count(data) > 0
     end
 end
