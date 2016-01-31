@@ -7,6 +7,7 @@ defmodule HaiElixir.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     escript: [main_module: HaiElixir],
      deps: deps]
   end
 
@@ -28,7 +29,8 @@ defmodule HaiElixir.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-        {:poison, "~> 2.0.1"}
+        {:poison, "~> 2.0.1"},
+        {:pipe, "~> 0.0.2"}
     ]
   end
 end

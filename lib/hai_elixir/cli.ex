@@ -1,36 +1,25 @@
 defmodule HaiElixir.Cli do
-     @moduledoc """
-        Handles command line parsing for the app
-     """
+    use Pipe
+    import HaiElixir.StudentGrades
+    import HaiElixir.Display
+
      def run(argv) do
          argv
          |> parse_args
-         |> process
+         |> start_task
+         |> display
      end
 
-     #TODO: do something with errors
+     #TODO: do something with errors?
      def parse_args(argv) do
          parse = OptionParser.parse(argv)
          case parse do
-             {[help: _],_,_} -> :help
-             {[grades: true],[],[]} -> :allStudentGrades
-             {[grades: studentId],[],[]} -> String.to_integer(studentId)
+             {[help: _],_,_} -> {:ok, :help}
+             {[grades: true],[],[]} -> {:ok, :allStudentGrades}
+             {[grades: studentId],[],[]} -> {:ok, String.to_integer(studentId)}
          end
      end
 
-     def process(:help) do
-         IO.puts """
-         usage: \n
-         --grades   get grades for all students
-         --grades <id>  get grades for a single student
-         """
-     end
-
-     def process(:allStudentGrades) do
-
-     end
-
-     def process(studentId) do
- 
-     end
+     def start_task({:ok, :help}), do: {:ok, :help}
+     def start_task({:ok, data}), do: getGrades(data)
 end
